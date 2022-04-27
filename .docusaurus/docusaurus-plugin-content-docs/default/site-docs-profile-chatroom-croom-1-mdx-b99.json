@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Profile/Chatroom/croom1",
+  "id": "Profile/Chatroom/croom1",
+  "isDocsHomePage": false,
+  "title": "Create Chat Room",
+  "description": "Create new chatroom with atleast one participant.",
+  "source": "@site/docs/Profile/Chatroom/croom1.mdx",
+  "slug": "/Profile/Chatroom/croom1",
+  "permalink": "/docs/Profile/Chatroom/croom1",
+  "version": "current",
+  "sidebar_label": "Create Chat Room",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Check Username",
+    "permalink": "/docs/Users/u3"
+  },
+  "next": {
+    "title": "Get ChatRoom Messages",
+    "permalink": "/docs/Profile/Chatroom/croom8"
+  }
+}

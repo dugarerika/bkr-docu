@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom6",
+  "id": "Profile/Chatroom/croom6",
+  "isDocsHomePage": false,
+  "title": "Delete member from chat room",
+  "description": "Delete member from given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom6.mdx",
+  "slug": "/Profile/Chatroom/croom6",
+  "permalink": "/docs/Profile/Chatroom/croom6",
+  "version": "current",
+  "sidebar_label": "Delete member from chat room"
+}

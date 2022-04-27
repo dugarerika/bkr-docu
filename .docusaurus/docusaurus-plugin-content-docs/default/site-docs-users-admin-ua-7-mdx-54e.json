@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua7",
+  "id": "Users/Admin/ua7",
+  "isDocsHomePage": false,
+  "title": "Verifiy User's document",
+  "description": "Verify user's document by id.",
+  "source": "@site/docs/Users/Admin/ua7.mdx",
+  "slug": "/Users/Admin/ua7",
+  "permalink": "/docs/Users/Admin/ua7",
+  "version": "current",
+  "sidebar_label": "Verifiy User's document"
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Storage/ustorage3",
+  "id": "Users/Storage/ustorage3",
+  "isDocsHomePage": false,
+  "title": "Delete Media",
+  "description": "Delete media from storage by id",
+  "source": "@site/docs/Users/Storage/ustorage3.mdx",
+  "slug": "/Users/Storage/ustorage3",
+  "permalink": "/docs/Users/Storage/ustorage3",
+  "version": "current",
+  "sidebar_label": "Delete Media"
+}

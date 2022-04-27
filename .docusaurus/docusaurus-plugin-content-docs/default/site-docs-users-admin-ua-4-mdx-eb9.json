@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua4",
+  "id": "Users/Admin/ua4",
+  "isDocsHomePage": false,
+  "title": "Get Members",
+  "description": "Returns users by role, default is 'member'. Available to users with type 'admin' only.",
+  "source": "@site/docs/Users/Admin/ua4.mdx",
+  "slug": "/Users/Admin/ua4",
+  "permalink": "/docs/Users/Admin/ua4",
+  "version": "current",
+  "sidebar_label": "Get Members"
+}

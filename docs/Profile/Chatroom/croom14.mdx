@@ -1,0 +1,56 @@
+---
+id: croom14
+title: Archive participant ChatRoom
+sidebar_label: Archive participant ChatRoom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Archive given chatroom
+
+<Endpoint req="DELETE">/api/users/chatrooms/:chatroom_id/archive</Endpoint>
+
+### Response
+
+<Tabs
+defaultValue="ok"
+values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '404 Not Found', value: 'notfound', },
+]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom archived successfully"
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "You are not allow to do this action"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+</Tabs>
+
+:::note
+please note that archived chatrooms are not displyed in default chatroooms
+:::

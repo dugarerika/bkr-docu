@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Profile/Chatroom/croom2",
+  "id": "Profile/Chatroom/croom2",
+  "isDocsHomePage": false,
+  "title": "Upload chatroom image",
+  "description": "Get Messages of given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom2.mdx",
+  "slug": "/Profile/Chatroom/croom2",
+  "permalink": "/docs/Profile/Chatroom/croom2",
+  "version": "current",
+  "sidebar_label": "Upload chatroom image",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get ChatRoom Messages",
+    "permalink": "/docs/Profile/Chatroom/croom8"
+  },
+  "next": {
+    "title": "Get All chatrooms",
+    "permalink": "/docs/Profile/Chatroom/croom3"
+  }
+}

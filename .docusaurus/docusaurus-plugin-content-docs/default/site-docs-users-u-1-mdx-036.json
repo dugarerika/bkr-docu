@@ -1,0 +1,17 @@
+{
+  "unversionedId": "Users/u1",
+  "id": "Users/u1",
+  "isDocsHomePage": false,
+  "title": "Getting",
+  "description": "The user can login using valid credentials",
+  "source": "@site/docs/Users/u1.mdx",
+  "slug": "/",
+  "permalink": "/docs/",
+  "version": "current",
+  "sidebar_label": "Authenticate",
+  "sidebar": "docs",
+  "next": {
+    "title": "Check Username",
+    "permalink": "/docs/Users/u3"
+  }
+}

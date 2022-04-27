@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua3",
+  "id": "Users/Admin/ua3",
+  "isDocsHomePage": false,
+  "title": "Get User Details",
+  "description": "Get user details by id",
+  "source": "@site/docs/Users/Admin/ua3.mdx",
+  "slug": "/Users/Admin/ua3",
+  "permalink": "/docs/Users/Admin/ua3",
+  "version": "current",
+  "sidebar_label": "Get User Details"
+}

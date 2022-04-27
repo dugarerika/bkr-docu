@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua10",
+  "id": "Users/Admin/ua10",
+  "isDocsHomePage": false,
+  "title": "Get verified Users",
+  "description": "Get all verified users lists",
+  "source": "@site/docs/Users/Admin/ua10.mdx",
+  "slug": "/Users/Admin/ua10",
+  "permalink": "/docs/Users/Admin/ua10",
+  "version": "current",
+  "sidebar_label": "Get verified Users"
+}

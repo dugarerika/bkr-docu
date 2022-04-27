@@ -1,0 +1,54 @@
+---
+id: croom6
+title: Delete member from chat room
+sidebar_label: Delete member from chat room
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Delete member from given chatroom
+
+<Endpoint req="DELETE">/api/users/chatrooms/:chatroom_id/members/:user_id/remove</Endpoint>
+
+### Parameters 
+
+####  Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| per_page | integer | ---- |
+
+
+### Response
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Member removed from group successfully."
+}
+```
+</TabItem>
+</Tabs>
+
+:::note
+Only admin can remove member from chat room
+:::

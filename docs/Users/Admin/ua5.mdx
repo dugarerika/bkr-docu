@@ -1,0 +1,51 @@
+---
+id: ua5
+title: Update User Password
+sidebar_label: Update User Password
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Update user password by id. Returns true on success. Does not affect the token.
+
+<Endpoint req="PUT">/api/admin/users/password</Endpoint>
+
+##### body:
+```js
+{
+	"id": "3",
+	"password": "testing1!"
+}
+```
+
+### Parameters
+
+## Required
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| id | string | user must exist |
+| password | ---- | Password must be minimum eight characters, at least one letter, one number and one special character (testing1!) |
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="required">
+
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+<TabItem value="optional">
+
+
+</TabItem>
+</Tabs>

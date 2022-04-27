@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua1",
+  "id": "Users/Admin/ua1",
+  "isDocsHomePage": false,
+  "title": "Get Users",
+  "description": "Admin can see list of all users",
+  "source": "@site/docs/Users/Admin/ua1.mdx",
+  "slug": "/Users/Admin/ua1",
+  "permalink": "/docs/Users/Admin/ua1",
+  "version": "current",
+  "sidebar_label": "Get Users"
+}

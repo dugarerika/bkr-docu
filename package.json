@@ -1,0 +1,39 @@
+{
+  "name": "qongfu-api-doc",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
+  },
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.68",
+    "@docusaurus/plugin-ideal-image": "^2.0.0-beta.3",
+    "@docusaurus/preset-classic": "2.0.0-alpha.68",
+    "@mdx-js/react": "^1.6.21",
+    "axios": "^0.21.0",
+    "clsx": "^1.1.1",
+    "node": "^15.4.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "rehype-truncate": "^1.2.1",
+    "remark-images": "^2.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

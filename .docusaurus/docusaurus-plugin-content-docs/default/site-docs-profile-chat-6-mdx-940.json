@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/chat6",
+  "id": "Profile/chat6",
+  "isDocsHomePage": false,
+  "title": "Update presence",
+  "description": "This API will make user online status to false",
+  "source": "@site/docs/Profile/chat6.mdx",
+  "slug": "/Profile/chat6",
+  "permalink": "/docs/Profile/chat6",
+  "version": "current",
+  "sidebar_label": "Update presence"
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/chat3",
+  "id": "Profile/chat3",
+  "isDocsHomePage": false,
+  "title": "Read All Messages",
+  "description": "Read all messages of given chatroom",
+  "source": "@site/docs/Profile/chat3.mdx",
+  "slug": "/Profile/chat3",
+  "permalink": "/docs/Profile/chat3",
+  "version": "current",
+  "sidebar_label": "Read All Messages"
+}

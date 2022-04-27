@@ -1,0 +1,52 @@
+---
+id: croom5
+title: Leave from chatroom
+sidebar_label: Leave from chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Leave from given group/chatroom
+
+<Endpoint req="DELETE">/api/users/chatrooms/:chatroom_id/leave</Endpoint>
+
+### Parameters 
+
+####  Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| per_page | integer | ---- |
+
+
+### Response
+
+<Tabs
+  defaultValue="ok"
+  values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+  ]
+}>
+<TabItem value="ok">
+
+```
+{
+    "status": true,
+    "message": "You are successfully left from given chatroom."
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```
+{
+    "status": false,
+    "message": "You are not in given chat room"
+}
+```
+</TabItem>
+</Tabs>
+
+

@@ -1,0 +1,93 @@
+---
+id: ua3
+title: Get User Details
+sidebar_label: Get User Details
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get user details by id
+
+<Endpoint req="GET">/api/admin/users/:user_id</Endpoint>
+
+### Response
+#### Optional
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| qualification_page | ---- | to get qualifications pagination |
+
+### Response
+
+<Tabs
+  defaultValue="accepted"
+  values={[
+    { label: '202 Accepted', value: 'accepted', },
+    { label: '404 Not Found', value: 'notfound', },
+  ]
+}>
+<TabItem value="accepted">
+
+```js
+{
+    "status": true,
+    "data": {
+        "id": "add2afb0-0bce-42c7-bbf4-2212565bde6c",
+        "email": "erika@qongfu.com",
+        "fullname": "MariaQongfu",
+        "first_name": "MariaQongfu",
+        "last_name": null,
+        "display_name": "MariaQongfu",
+        "account_type": "private",
+        "identity_verified": 0,
+        "email_verified_at": "2020-11-26T09:04:28+00:00",
+        "email_verified": 1,
+        "contact_number_verified": 0,
+        "created_at": "2020-11-26T09:04:09+00:00",
+        "updated_at": "2020-12-07T21:13:58+00:00",
+        "active": 0,
+        "locked": 1,
+        "pin": null,
+        "contact_country_code": null,
+        "ekyc_approved": 0,
+        "verified": 0,
+        "old_id": "",
+        "is_online": false,
+        "timezone": null,
+        "username": "erika",
+        "galleries": [],
+        "lifestyles": [],
+        "qongfus": [],
+        "places": [],
+        "devices": [],
+        "languages": [],
+        "notifications": [],
+        "claims": [],
+        "roles": [
+            {
+                "id": 1,
+                "type": "member"
+            }
+        ],
+        "qualifications": {
+            "status": true,
+            "total": 0,
+            "data": []
+        }
+    }
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+</Tabs>
+

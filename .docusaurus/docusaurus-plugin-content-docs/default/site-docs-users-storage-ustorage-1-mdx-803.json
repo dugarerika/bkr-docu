@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Storage/ustorage1",
+  "id": "Users/Storage/ustorage1",
+  "isDocsHomePage": false,
+  "title": "Storage information",
+  "description": "Get user storage information",
+  "source": "@site/docs/Users/Storage/ustorage1.mdx",
+  "slug": "/Users/Storage/ustorage1",
+  "permalink": "/docs/Users/Storage/ustorage1",
+  "version": "current",
+  "sidebar_label": "Storage information"
+}

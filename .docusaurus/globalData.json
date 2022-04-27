@@ -1,0 +1,215 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "Users/u1",
+          "docs": [
+            {
+              "id": "base",
+              "path": "/docs/base"
+            },
+            {
+              "id": "Chat/chat1",
+              "path": "/docs/Chat/chat1",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/chat1",
+              "path": "/docs/Profile/chat1",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/chat2",
+              "path": "/docs/Profile/chat2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/chat3",
+              "path": "/docs/Profile/chat3"
+            },
+            {
+              "id": "Profile/chat4",
+              "path": "/docs/Profile/chat4"
+            },
+            {
+              "id": "Profile/chat5",
+              "path": "/docs/Profile/chat5"
+            },
+            {
+              "id": "Profile/chat6",
+              "path": "/docs/Profile/chat6"
+            },
+            {
+              "id": "Profile/chat7",
+              "path": "/docs/Profile/chat7"
+            },
+            {
+              "id": "Profile/chat8",
+              "path": "/docs/Profile/chat8"
+            },
+            {
+              "id": "Profile/Chatroom/croom1",
+              "path": "/docs/Profile/Chatroom/croom1",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/Chatroom/croom10",
+              "path": "/docs/Profile/Chatroom/croom10"
+            },
+            {
+              "id": "Profile/Chatroom/croom11",
+              "path": "/docs/Profile/Chatroom/croom11"
+            },
+            {
+              "id": "Profile/Chatroom/croom12",
+              "path": "/docs/Profile/Chatroom/croom12"
+            },
+            {
+              "id": "Profile/Chatroom/croom13",
+              "path": "/docs/Profile/Chatroom/croom13"
+            },
+            {
+              "id": "Profile/Chatroom/croom14",
+              "path": "/docs/Profile/Chatroom/croom14"
+            },
+            {
+              "id": "Profile/Chatroom/croom15",
+              "path": "/docs/Profile/Chatroom/croom15"
+            },
+            {
+              "id": "Profile/Chatroom/croom16",
+              "path": "/docs/Profile/Chatroom/croom16"
+            },
+            {
+              "id": "Profile/Chatroom/croom17",
+              "path": "/docs/Profile/Chatroom/croom17"
+            },
+            {
+              "id": "Profile/Chatroom/croom18",
+              "path": "/docs/Profile/Chatroom/croom18"
+            },
+            {
+              "id": "Profile/Chatroom/croom19",
+              "path": "/docs/Profile/Chatroom/croom19"
+            },
+            {
+              "id": "Profile/Chatroom/croom2",
+              "path": "/docs/Profile/Chatroom/croom2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/Chatroom/croom20",
+              "path": "/docs/Profile/Chatroom/croom20"
+            },
+            {
+              "id": "Profile/Chatroom/croom3",
+              "path": "/docs/Profile/Chatroom/croom3",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/Chatroom/croom4",
+              "path": "/docs/Profile/Chatroom/croom4"
+            },
+            {
+              "id": "Profile/Chatroom/croom5",
+              "path": "/docs/Profile/Chatroom/croom5"
+            },
+            {
+              "id": "Profile/Chatroom/croom6",
+              "path": "/docs/Profile/Chatroom/croom6"
+            },
+            {
+              "id": "Profile/Chatroom/croom7",
+              "path": "/docs/Profile/Chatroom/croom7"
+            },
+            {
+              "id": "Profile/Chatroom/croom8",
+              "path": "/docs/Profile/Chatroom/croom8",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Profile/Chatroom/croom9",
+              "path": "/docs/Profile/Chatroom/croom9"
+            },
+            {
+              "id": "Users/Admin/Storage/uastorage1",
+              "path": "/docs/Users/Admin/Storage/uastorage1"
+            },
+            {
+              "id": "Users/Admin/ua1",
+              "path": "/docs/Users/Admin/ua1"
+            },
+            {
+              "id": "Users/Admin/ua10",
+              "path": "/docs/Users/Admin/ua10"
+            },
+            {
+              "id": "Users/Admin/ua11",
+              "path": "/docs/Users/Admin/ua11"
+            },
+            {
+              "id": "Users/Admin/ua2",
+              "path": "/docs/Users/Admin/ua2"
+            },
+            {
+              "id": "Users/Admin/ua3",
+              "path": "/docs/Users/Admin/ua3"
+            },
+            {
+              "id": "Users/Admin/ua4",
+              "path": "/docs/Users/Admin/ua4"
+            },
+            {
+              "id": "Users/Admin/ua5",
+              "path": "/docs/Users/Admin/ua5"
+            },
+            {
+              "id": "Users/Admin/ua6",
+              "path": "/docs/Users/Admin/ua6"
+            },
+            {
+              "id": "Users/Admin/ua7",
+              "path": "/docs/Users/Admin/ua7"
+            },
+            {
+              "id": "Users/Admin/ua8",
+              "path": "/docs/Users/Admin/ua8"
+            },
+            {
+              "id": "Users/Admin/ua9",
+              "path": "/docs/Users/Admin/ua9"
+            },
+            {
+              "id": "Users/Storage/ustorage1",
+              "path": "/docs/Users/Storage/ustorage1"
+            },
+            {
+              "id": "Users/Storage/ustorage2",
+              "path": "/docs/Users/Storage/ustorage2"
+            },
+            {
+              "id": "Users/Storage/ustorage3",
+              "path": "/docs/Users/Storage/ustorage3"
+            },
+            {
+              "id": "Users/u1",
+              "path": "/docs/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "Users/u3",
+              "path": "/docs/Users/u3",
+              "sidebar": "docs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

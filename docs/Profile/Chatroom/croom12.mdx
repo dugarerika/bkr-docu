@@ -1,0 +1,56 @@
+---
+id: croom12
+title: Global Hide Chatroom
+sidebar_label: Global Hide Chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Hide global chatroom
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/global-hide</Endpoint>
+
+### Response
+
+<Tabs
+defaultValue="ok"
+values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '404 Not Found', value: 'notfound', },
+]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom hide successfully"
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "You are not allow to do this action"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+</Tabs>
+
+:::note
+Please note that hidden chatrooms are not displayed in default chatroooms
+:::

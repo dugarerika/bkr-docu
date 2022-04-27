@@ -1,0 +1,128 @@
+---
+id: chat1
+title: Create Message
+sidebar_label: Create Message
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Sent message on given chatroom
+
+<Endpoint req="POST">_/api/users/chatroom/:chatroom_id/messages</Endpoint>
+
+
+ ##### body:
+ ```js
+ {
+  "sender_id" : "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+  "sender_type": 1,
+  "body" : "proof",
+  "sent_timestamp" : "020-09-11T13:07:49+00:00"
+ }
+ ```
+ 
+ ### Parameters 
+ 
+ <Tabs
+  defaultValue="required"
+  values={[
+    { label: 'Required', value: 'required', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="required">
+
+ | Property | Type | Description |
+ | ---- | ---- | ---- |
+ | body | ---- | message body |
+ | sender_id | string | User Id |
+ | sender_type | integer | 1 : User, 2 :Specialist, 3: Place, 4 :Support |
+ | sent_timestamp | Timestamp | e.g "2020-07-07T07:10:02+0000" |
+</TabItem>
+<TabItem value="optional">
+
+| Property | Type | Description |
+ | ---- | ---- | ---- |
+ | has_attachment | boolean | true or false |
+ | reference_type | integer | 1 : Webpage, 2: Schedule, 3:Service, 4:Place, 5:Specialist, 6:User, 7: Earning Course |
+</TabItem>
+</Tabs>
+
+### Response
+
+<Tabs
+  defaultValue="unprocessable"
+  values={[
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '404 Not Foun', value: 'notfound', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The sender id field is required."
+}
+```
+```js
+{
+    "status": false,
+    "message": "You can allow to send message in others chatroom"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Done!",
+    "data": {
+    "id": "12b24670-1087-48a2-a3e1-32f71e232c46",
+    "old_chatroom_id": 0,
+    "old_sender_id": 0,
+    "sender_type": 1,
+    "body": "Erika 4th proof",
+    "sent_timestamp": "0020-09-11T13:07:49+00:00",
+    "has_attachment": false,
+    "reference_link": null,
+    "reference_link_id": null,
+    "reference_type": null,
+    "read_at": null,
+    "created_at": "2020-11-19T10:47:24+00:00",
+    "updated_at": "2020-11-19T10:47:24+00:00",
+    "sender_id": "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+    "chatroom_id": "8a6a1498-fdd5-436b-b0e0-3897a19bbe93",
+    "old_id": "",
+    "received": [
+    {
+    "user_id": "d4f85570-6700-4ebc-9c2d-e0c2deddeb4c",
+    "received": true,
+    "received_timestamp": "0020-09-11T13:07:49+00:00"
+    }
+    ],
+    "read": [
+    {
+    "user_id": "d4f85570-6700-4ebc-9c2d-e0c2deddeb4c",
+    "received": false,
+    "read_timestamp": null
+    }
+    ]
+    }
+}
+```
+</TabItem>
+</Tabs>

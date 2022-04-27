@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom4",
+  "id": "Profile/Chatroom/croom4",
+  "isDocsHomePage": false,
+  "title": "Export Chatroom",
+  "description": "Export given chatroom messages",
+  "source": "@site/docs/Profile/Chatroom/croom4.mdx",
+  "slug": "/Profile/Chatroom/croom4",
+  "permalink": "/docs/Profile/Chatroom/croom4",
+  "version": "current",
+  "sidebar_label": "Export Chatroom"
+}

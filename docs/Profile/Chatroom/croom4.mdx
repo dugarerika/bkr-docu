@@ -1,0 +1,57 @@
+---
+id: croom4
+title: Export Chatroom
+sidebar_label: Export Chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Export given chatroom messages
+
+<Endpoint req="GET">/api/users/chatrooms/:chatroom_id/export</Endpoint>
+
+
+### Parameters 
+
+#### Optional
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| per_page | integer | ---- |
+
+
+### Response
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom messages are exported successfully.",
+    "data": "exports/Hii.csv"
+}
+```
+</TabItem>
+</Tabs>
+
+:::note
+I can export only those chatroom in which I have added.
+:::

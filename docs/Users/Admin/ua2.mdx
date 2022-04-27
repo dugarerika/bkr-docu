@@ -1,0 +1,58 @@
+---
+id: ua2
+title: Activate  | Lock User
+sidebar_label: Activate  | Lock User
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Admin can lock/unlock or active/deactive user
+
+<Endpoint req="POST">/api/admin/members/:user_id</Endpoint>
+
+#### body:
+```js
+{
+	"active" : 1,
+	"locked" : 0
+}
+```
+
+### Parameters 
+
+#### Optional
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| active | boolean (0,1) | ---- |
+| locked | boolean (0,1) | ---- |
+
+### Response
+
+<Tabs
+  defaultValue="accepted"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '202 Accepted', value: 'accepted', },
+  ]
+}>
+<TabItem value="accepted">
+
+```js
+{
+    "status": true
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+</Tabs>

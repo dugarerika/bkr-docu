@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua9",
+  "id": "Users/Admin/ua9",
+  "isDocsHomePage": false,
+  "title": "Get verification User's Details",
+  "description": "Get details of verification users",
+  "source": "@site/docs/Users/Admin/ua9.mdx",
+  "slug": "/Users/Admin/ua9",
+  "permalink": "/docs/Users/Admin/ua9",
+  "version": "current",
+  "sidebar_label": "Get verification User's Details"
+}

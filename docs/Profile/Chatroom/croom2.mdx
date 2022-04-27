@@ -1,0 +1,62 @@
+---
+id: croom2
+title: Upload chatroom image
+sidebar_label: Upload chatroom image
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get Messages of given chatroom
+
+<Endpoint req="GET">/api/users/chatroom/:chatroom_id</Endpoint>
+
+#### body:
+```js
+{
+    "body" : "fsdfsdf",
+    "sender_id" : 1,
+    "sender_type" : 2,
+    "sent_timestamp" : "2020-07-07T07:10:02+0000"
+}
+```
+
+### Parameters 
+
+#### Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| per_page | integer | default is 20 |
+
+### Response
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom avatar updated successfully.",
+    "data": {
+        "avatar": "/chat-rooms/avatar/458/IMG.jpg"
+    }
+}
+```
+</TabItem>
+</Tabs>

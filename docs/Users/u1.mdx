@@ -1,0 +1,95 @@
+---
+id: u1
+title: Getting
+sidebar_label: Authenticate
+slug: /
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+The user can login using valid credentials
+<img alt="Docusaurus with Keytar" src={useBaseUrl('/img/Calendar.png')} />
+
+<Endpoint req="POST">/api/users/authenticate</Endpoint> 
+
+##### body:
+```js
+{
+	"email": "email@gmail.com",
+	"password" : "password",
+	"for_mobile" : true
+}
+```
+### Parameters 
+
+<Tabs
+  defaultValue="require"
+  values={[
+    { label: 'Require', value: 'require', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="require">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+|`email`|string|email formatted|
+|`password`|string|password|
+
+</TabItem>
+
+<TabItem value="optional">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+|`device_type`|string|Platform.IOS(or Android)|
+|`device_name`|string|                        |
+|`device_id`|string |UDID of the device|
+|`device_fcm_token`|string|fcmToken|
+|`for_mobile`|boolean| when for_mobile = false the token will expire in 10800 minutes| 
+
+</TabItem>
+</Tabs>
+
+### Response
+
+<Tabs
+  defaultValue="accepted"
+  values={[
+    { label: '202 Accepted ', value: 'accepted', },
+    { label: '400 Bad Request', value: 'bad', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+  ]
+}>
+<TabItem value="accepted">
+
+```js
+{
+    "status": true,
+    "api_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvc3RhZ2luZy1hcGkucW9uZ2Z1LmNvbVwvXC9hcGlcL3VzZXJzXC9hdXRoZW50aWNhdGUiLCJpYXQiOjE2MDU2OTIzNzIsImV4cCI6MjA3ODczMjM3MiwibmJmIjoxNjA1NjkyMzcyLCJqdGkiOiJ2Uk5UUm9SZHJHVjF3RjhNIiwic3ViIjoiODFlZDg3ZTMtMzZhMi00ZjgyLWI5YTUtYzcwYjg2NDk5M2U3IiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.L6NhVxXGIQR0O-Qmh0gIDmJuS7OL3dv13Bf60SHUuG0",
+    "is_admin": true
+}
+```
+</TabItem>
+<TabItem value="bad">
+
+```js
+{
+    "message": "Password is incorrect",
+    "status": false
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The password field is required."
+}
+```
+</TabItem>
+</Tabs>
+

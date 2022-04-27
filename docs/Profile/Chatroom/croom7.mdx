@@ -1,0 +1,216 @@
+---
+id: croom7
+title: Add Members to chatroom
+sidebar_label: Add Members to chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Add Member to existing chatroom
+
+<Endpoint req="POST">/api/users/chatroom/:chatroom_id/addmembers</Endpoint>
+
+#### body:
+```js
+{
+    "participants" : [
+        {
+			"user_id": "16f95c92-9b57-4b6b-afc1-1871dc80d926",
+			"participant_id": "16f95c92-9b57-4b6b-afc1-1871dc80d926", 
+			"participant_type": 1
+		}
+    ]
+}
+```
+
+### Parameters 
+
+#### Required
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| participants | array |  |
+
+- e.g  participants : 
+
+```js
+        [
+            "user_id": Id of user,
+            "participant_id": participant id, 
+            "participant_type": participant type (1 : User, 2 : Specialist, 3 : Agent, 4 : Business/Place), 
+            "is_admin": false
+        ]
+```
+
+### Response
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '401 Unauthorized', value: 'unauthorized', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+ {
+     "participants" : [
+        {
+			"user_id": "16f95c92-9b57-4b6b-afc1-1871dc80d926",
+			"participant_id": "16f95c92-9b57-4b6b-afc1-1871dc80d926", 
+			"participant_type": 1
+		}
+    ]
+ }
+```
+</TabItem>
+<TabItem value="unauthorized">
+
+```js
+{
+    "status": false,
+    "message": "Only admin can add members to chatroom"
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Members added successfully in given chatroom.",
+    "data": {
+        "id": "1bf656b4-5419-4617-a39a-66c2851ef4bc",
+        "name": "Hii",
+        "description": null,
+        "avatar": null,
+        "old_user_id": null,
+        "old_place_id": null,
+        "old_specialist_id": null,
+        "is_group_chat": true,
+        "is_chat_with_place": false,
+        "is_tech_support": false,
+        "solved": false,
+        "archived": false,
+        "hidden": false,
+        "created_at": "2020-11-22T11:20:31+00:00",
+        "updated_at": "2020-11-22T11:20:31+00:00",
+        "engaged_with_agent": false,
+        "activity_id": null,
+        "place_id": null,
+        "user_id": "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+        "specialist_id": null,
+        "old_id": "",
+        "contact_user_id": null,
+        "participants": [
+            {
+                "id": 539,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": false,
+                "created_at": "2020-11-22 11:20:31",
+                "updated_at": "2020-11-22 11:20:31",
+                "archived": false,
+                "hidden": false,
+                "user_id": "6db5d6ea-9d20-4585-b6f6-028a64602907",
+                "participant_id": "6db5d6ea-9d20-4585-b6f6-028a64602907",
+                "chatroom_id": "1bf656b4-5419-4617-a39a-66c2851ef4bc",
+                "duration": null,
+                "user_details": {
+                    "id": "6db5d6ea-9d20-4585-b6f6-028a64602907",
+                    "fullname": "Fuyduduf Yfhcuc",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            },
+            {
+                "id": 540,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": false,
+                "created_at": "2020-11-22 11:20:31",
+                "updated_at": "2020-11-22 11:20:31",
+                "archived": false,
+                "hidden": false,
+                "user_id": "d4f85570-6700-4ebc-9c2d-e0c2deddeb4c",
+                "participant_id": "d4f85570-6700-4ebc-9c2d-e0c2deddeb4c",
+                "chatroom_id": "1bf656b4-5419-4617-a39a-66c2851ef4bc",
+                "duration": null,
+                "user_details": {
+                    "id": "d4f85570-6700-4ebc-9c2d-e0c2deddeb4c",
+                    "fullname": "dugar",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            },
+            {
+                "id": 541,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": true,
+                "created_at": "2020-11-22 11:20:31",
+                "updated_at": "2020-11-22 11:20:31",
+                "archived": false,
+                "hidden": false,
+                "user_id": "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+                "participant_id": "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+                "chatroom_id": "1bf656b4-5419-4617-a39a-66c2851ef4bc",
+                "duration": null,
+                "user_details": {
+                    "id": "600a1a5a-ddd6-40c1-9b79-3ba2178155b0",
+                    "fullname": "Erika",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            }
+        ],
+        "last_message_body": null,
+        "last_message_sender": null,
+        "last_message_timestamp": null
+    }
+}
+```
+</TabItem>
+</Tabs>

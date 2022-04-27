@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom10",
+  "id": "Profile/Chatroom/croom10",
+  "isDocsHomePage": false,
+  "title": "Hide patricipant chatroom",
+  "description": "Hide Participant chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom10.mdx",
+  "slug": "/Profile/Chatroom/croom10",
+  "permalink": "/docs/Profile/Chatroom/croom10",
+  "version": "current",
+  "sidebar_label": "Hide patricipant chatroom"
+}

@@ -1,0 +1,40 @@
+---
+id: chat4
+title: Block User
+sidebar_label: Block User
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Block given user
+
+<Endpoint req="POST">/api/users/:user_id/block</Endpoint>
+
+
+ 
+ ### Response
+ ##### 200 OK
+ ```
+ {
+  "status": true,
+  "message": "You have blocked given user successfully."
+ }
+ ```
+ 
+ ##### 404 Not Found
+ ```
+ {
+  "status": false,
+  "message": "User not found."
+ }
+ ```
+ 
+ ##### 404 Not Found
+ ```
+ {
+  "status": false,
+  "message": "User is blocked already"
+ }
+ ```

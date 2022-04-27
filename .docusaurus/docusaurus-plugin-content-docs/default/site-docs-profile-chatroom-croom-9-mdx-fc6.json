@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom9",
+  "id": "Profile/Chatroom/croom9",
+  "isDocsHomePage": false,
+  "title": "Check for available Agents",
+  "description": "This API will return the user id of avaiable agent with less chat queue.",
+  "source": "@site/docs/Profile/Chatroom/croom9.mdx",
+  "slug": "/Profile/Chatroom/croom9",
+  "permalink": "/docs/Profile/Chatroom/croom9",
+  "version": "current",
+  "sidebar_label": "Check for available Agents"
+}

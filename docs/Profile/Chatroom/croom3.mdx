@@ -1,0 +1,51 @@
+---
+id: croom3
+title: Get All chatrooms
+sidebar_label: Get All chatrooms
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Upload chatroom image
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/update-avatar</Endpoint>
+
+### Parameters 
+
+#### Required
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| image | file | ---- |
+
+### Response
+<Tabs
+  defaultValue="unprocessable"
+  values={[
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The image field is required."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom avatar updated successfully.",
+    "data": {
+        "avatar": "/chat-rooms/avatar/458/IMG.jpg"
+    }
+}
+```
+</TabItem>
+</Tabs>

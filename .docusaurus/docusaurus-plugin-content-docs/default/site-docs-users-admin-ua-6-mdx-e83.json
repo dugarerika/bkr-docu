@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua6",
+  "id": "Users/Admin/ua6",
+  "isDocsHomePage": false,
+  "title": "Delete User",
+  "description": "Delete single user by id.",
+  "source": "@site/docs/Users/Admin/ua6.mdx",
+  "slug": "/Users/Admin/ua6",
+  "permalink": "/docs/Users/Admin/ua6",
+  "version": "current",
+  "sidebar_label": "Delete User"
+}

@@ -1,0 +1,73 @@
+---
+id: u3
+title: Check Username
+sidebar_label: Check Username
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Can check the username availability
+
+<Endpoint req="POST">/api/users/check-username</Endpoint>
+
+##### body:
+```js
+{
+	"username": "email1"
+}
+```
+
+### Parameters 
+
+#### Require
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| `username` | string |  |
+
+
+### Response
+
+<Tabs
+  name="NAME"
+  defaultValue="ok"
+  values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable'},
+    { label: '401 Unauthorized', value: 'unauthorized'},
+  ]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Username checked successfuly",
+    "data": {
+        "username": "email1",
+        "available": true
+    }
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The username field is required."
+}
+```
+</TabItem>
+<TabItem value="unauthorized">
+
+```js
+{
+    "message": "Invalid token",
+    "status": false,
+    "token": ""
+}
+```
+</TabItem>
+</Tabs>

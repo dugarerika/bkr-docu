@@ -1,0 +1,31 @@
+---
+id: chat2
+title: Read Message
+sidebar_label: Read Message
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Read given messages
+
+<Endpoint req="POST">/api/users/messages/:message_id/read</Endpoint>
+
+### Response
+##### 200 OK
+
+```
+{
+    "status": true,
+    "message": "Message read successfully"
+}
+```
+
+##### 404 Not Found
+```
+{
+    "status": false,
+    "message": "Message not found."
+}
+```

@@ -1,0 +1,11 @@
+{
+  "unversionedId": "base",
+  "id": "base",
+  "isDocsHomePage": false,
+  "title": "base",
+  "description": "<Tabs",
+  "source": "@site/docs/base.mdx",
+  "slug": "/base",
+  "permalink": "/docs/base",
+  "version": "current"
+}

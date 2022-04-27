@@ -1,0 +1,39 @@
+---
+id: ustorage2
+title: Get media details
+sidebar_label: Get media details
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get storage media details by id
+
+<Endpoint req="POST">/api/users/media/:media_id</Endpoint>
+
+### Parameters
+
+### Response
+
+<Tabs
+  defaultValue="ok"
+  values={[
+    { label: 'Required', value: 'ok', },
+    { label: '404 Not Found', value: 'notfound', },
+  ]
+}>
+<TabItem value="ok">
+
+
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "Media not found."
+}
+```
+</TabItem>
+</Tabs>

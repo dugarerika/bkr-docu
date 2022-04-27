@@ -1,0 +1,37 @@
+---
+id: ustorage3
+title: Delete Media
+sidebar_label: Delete Media
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Delete media from storage by id
+
+<Endpoint req="POST">/api/users/media/:media_id</Endpoint>
+
+### Response
+
+<Tabs
+  defaultValue="ok"
+  values={[
+    { label: 'ok', value: 'ok', },
+    { label: '404 Not Found', value: 'notfound', },
+  ]
+}>
+<TabItem value="ok">
+
+
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "Media not found."
+}
+```
+</TabItem>
+</Tabs>

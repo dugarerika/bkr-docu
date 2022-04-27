@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom18",
+  "id": "Profile/Chatroom/croom18",
+  "isDocsHomePage": false,
+  "title": "Make Admin",
+  "description": "Make given user admin into given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom18.mdx",
+  "slug": "/Profile/Chatroom/croom18",
+  "permalink": "/docs/Profile/Chatroom/croom18",
+  "version": "current",
+  "sidebar_label": "Make Admin"
+}

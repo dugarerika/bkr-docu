@@ -1,0 +1,61 @@
+---
+id: ua6
+title: Delete User
+sidebar_label: Delete User
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Delete single user by id.
+
+<Endpoint req="DELETE">/api/admin/users</Endpoint>
+
+### Parameters 
+
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: 'Required', value: 'required', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="required">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| id | string | required |
+</TabItem>
+<TabItem value="optional">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| status | ---- | true/false |
+| data | ---- | deleted resource |
+</TabItem>
+</Tabs>
+
+### Response
+
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+<TabItem value="optional">
+
+
+</TabItem>
+</Tabs>

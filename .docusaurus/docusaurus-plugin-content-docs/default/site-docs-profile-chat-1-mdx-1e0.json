@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Profile/chat1",
+  "id": "Profile/chat1",
+  "isDocsHomePage": false,
+  "title": "Create Message",
+  "description": "Sent message on given chatroom",
+  "source": "@site/docs/Profile/chat1.mdx",
+  "slug": "/Profile/chat1",
+  "permalink": "/docs/Profile/chat1",
+  "version": "current",
+  "sidebar_label": "Create Message",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get All chatrooms",
+    "permalink": "/docs/Profile/Chatroom/croom3"
+  },
+  "next": {
+    "title": "Read Message",
+    "permalink": "/docs/Profile/chat2"
+  }
+}

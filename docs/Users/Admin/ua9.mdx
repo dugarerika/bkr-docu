@@ -1,0 +1,36 @@
+---
+id: ua9
+title: Get verification User's Details
+sidebar_label: Get verification User's Details
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get details of verification users
+
+<Endpoint req="GET">/api/admin/users/verification/1</Endpoint>
+
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+<TabItem value="optional">
+
+
+</TabItem>
+</Tabs>
+

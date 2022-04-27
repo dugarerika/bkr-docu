@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Users/u3",
+  "id": "Users/u3",
+  "isDocsHomePage": false,
+  "title": "Check Username",
+  "description": "Can check the username availability",
+  "source": "@site/docs/Users/u3.mdx",
+  "slug": "/Users/u3",
+  "permalink": "/docs/Users/u3",
+  "version": "current",
+  "sidebar_label": "Check Username",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Create Chat Room",
+    "permalink": "/docs/Profile/Chatroom/croom1"
+  }
+}

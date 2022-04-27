@@ -1,0 +1,52 @@
+---
+id: croom10
+title: Hide patricipant chatroom
+sidebar_label: Hide patricipant chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Hide Participant chatroom
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/hide</Endpoint>
+
+### Response
+
+<Tabs
+defaultValue="ok"
+values={[
+    { label: '200 OK', value: 'ok'},
+    { label: '422 Unprocessable Entity', value: 'unprocessable'},
+    { label: '404 Not Found', value: 'notfound'},
+]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Chatroom hide successfully"
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "You are not allow to do this action"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+</Tabs>

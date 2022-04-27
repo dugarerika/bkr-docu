@@ -1,0 +1,244 @@
+---
+id: croom1
+title: Create Chat Room
+sidebar_label: Create Chat Room
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Create new chatroom with atleast one participant.
+
+<Endpoint req="POST">/api/users/chatrooms</Endpoint>
+
+##### body:
+```js
+{
+    "name": "Hii",
+    "description": "",
+    "avatar": "",
+    "is_group_chat": true,
+    "is_chat_with_place": false,
+    "is_tech_support": false,
+    "solved": false,
+    "activity_id": null,
+    "participants": [
+        {
+            "user_id": "05905a94-857d-46fb-a40e-0e8298be29cc",
+            "participant_id": "05905a94-857d-46fb-a40e-0e8298be29cc",
+            "participant_type": 1,
+            "is_admin": false
+        },
+        {
+            "user_id": "9a7ae2aa-944c-4199-9578-38d1a6fb62c3",
+            "participant_id": "9a7ae2aa-944c-4199-9578-38d1a6fb62c3",
+            "participant_type": 1,
+            "is_admin": false
+        }
+    ]
+}
+```
+
+### Parameters 
+
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: 'Required', value: 'required', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="required">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| participants | array |  |
+
+- e.g  participants : 
+
+```js
+        [
+            "user_id": Id of user,
+            "participant_id": participant id, 
+            "participant_type": participant type (1 : User, 2 : Specialist, 3 : Agent, 4 : Business/Place), 
+            "is_admin": false
+        ]
+```
+</TabItem>
+<TabItem value="optional">
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| name | ---- | Chat room Name |
+| description | ---- | Description |
+| avatar | ---- | Avatar URL |
+| is_group_chat | ---- | true or false (default is false) |
+| is_chat_with_place | ---- | true or false (default is false) |
+| is_tech_support | ---- | true or false (default is false) |
+| solved | ---- | true or false (default is false) |
+| activity_id | integer | ---- |
+| place_id | string | ---- |
+| specialist_id | string | ---- |
+| contact_user_id | string | ---- |
+</TabItem>
+</Tabs>
+
+### Response
+
+<Tabs
+  defaultValue="unauthorized"
+  values={[
+    { label: '401 Unauthorized', value: 'unauthorized', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '200 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="unauthorized">
+
+```js
+{
+    "message": "Invalid token",
+    "status": false,
+    "token": ""
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The selected participants.1.user_id is invalid."
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Done!",
+    "data": {
+        "name": "Hii",
+        "description": null,
+        "avatar": null,
+        "is_group_chat": true,
+        "is_chat_with_place": false,
+        "is_tech_support": false,
+        "solved": false,
+        "activity_id": null,
+        "user_id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+        "id": "ec942227-8b16-471b-9476-20543a237f9a",
+        "updated_at": "2020-11-19T07:47:11+00:00",
+        "created_at": "2020-11-19T07:47:11+00:00",
+        "participants": [
+            {
+                "id": 531,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": false,
+                "created_at": "2020-11-19 07:47:11",
+                "updated_at": "2020-11-19 07:47:11",
+                "archived": false,
+                "hidden": false,
+                "user_id": "05905a94-857d-46fb-a40e-0e8298be29cc",
+                "participant_id": "05905a94-857d-46fb-a40e-0e8298be29cc",
+                "chatroom_id": "ec942227-8b16-471b-9476-20543a237f9a",
+                "duration": null,
+                "user_details": {
+                    "id": "05905a94-857d-46fb-a40e-0e8298be29cc",
+                    "fullname": "Xjxc",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            },
+            {
+                "id": 532,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": true,
+                "created_at": "2020-11-19 07:47:11",
+                "updated_at": "2020-11-19 07:47:11",
+                "archived": false,
+                "hidden": false,
+                "user_id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+                "participant_id": "9a7ae2aa-944c-4199-9578-38d1a6fb62c3",
+                "chatroom_id": "ec942227-8b16-471b-9476-20543a237f9a",
+                "duration": null,
+                "user_details": {
+                    "id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+                    "fullname": "Erika",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            },
+            {
+                "id": 533,
+                "old_chatroom_id": 0,
+                "old_user_id": 0,
+                "old_participant_id": 0,
+                "participant_type": 1,
+                "is_admin": true,
+                "created_at": "2020-11-19 07:47:11",
+                "updated_at": "2020-11-19 07:47:11",
+                "archived": false,
+                "hidden": false,
+                "user_id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+                "participant_id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+                "chatroom_id": "ec942227-8b16-471b-9476-20543a237f9a",
+                "duration": null,
+                "user_details": {
+                    "id": "81ed87e3-36a2-4f82-b9a5-c70b864993e7",
+                    "fullname": "Erika",
+                    "location": null,
+                    "avatar_url": null
+                },
+                "contact_status": {
+                    "blocked": [],
+                    "reported": false
+                },
+                "unread_messages": 0,
+                "chatroom_settings": {
+                    "muted": false,
+                    "duration": null
+                },
+                "place_details": null,
+                "specialist_details": null
+            }
+        ],
+        "last_message_body": null,
+        "last_message_sender": null,
+        "last_message_timestamp": null
+    }
+}
+```
+</TabItem>
+</Tabs>
+

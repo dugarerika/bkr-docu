@@ -1,0 +1,40 @@
+---
+id: chat6
+title: Update presence
+sidebar_label: Update presence
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+This API will make user online status to false
+
+<Endpoint req="POST">/api/users/updatepresence</Endpoint>
+
+### Parameters 
+
+## Required
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| is_online | boolean | true or false |
+
+### Response
+##### 200 OK
+
+```
+{
+    "status": true,
+    "message": "User presence updated"
+}
+```
+
+##### 401 Unauthorized
+```
+{
+    "message": "Invalid token",
+    "status": false,
+    "token": ""
+}
+```

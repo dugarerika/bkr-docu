@@ -1,0 +1,68 @@
+---
+id: croom9
+title: Check for available Agents
+sidebar_label: Check for available Agents
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+This API will return the user id of avaiable agent with less chat queue.
+
+<Endpoint req="GET">/api/users/chatroom/:chatroom_id/add-members</Endpoint>
+
+#### body:
+```js
+{
+    "participants" : [
+        {
+			"user_id": 1,
+			"participant_id": 2, 
+			"participant_type": 1
+		},
+        {
+			"user_id": 2,
+			"participant_id": 5, 
+			"participant_type": 1
+		},
+		{
+			"user_id": 5,
+			"participant_id": 1, 
+			"participant_type": 1, 
+			"is_admin": true
+		}
+    ]
+}
+```
+
+### Response
+
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "The participants.0.user_id must be a string."
+}
+```
+</TabItem>
+</Tabs>
+
+

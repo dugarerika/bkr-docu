@@ -1,0 +1,22 @@
+---
+id: ua10
+title: Get verified Users
+sidebar_label: Get verified Users
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get all verified users lists
+
+<Endpoint req="GET">/api/admin/users/verified</Endpoint>
+
+### Parameters 
+
+#### Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| per_page | integer | ---- |
+| sort_dir | string | (asc | desc) |
+| search | string | (email, fullname, firstname, lastname) |

@@ -1,0 +1,52 @@
+---
+id: croom17
+title: UnArchive Global Chatroom
+sidebar_label: UnArchive Global Chatroom
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Un-Archive Main chat room
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/global-un-archive</Endpoint>
+
+### Response
+
+<Tabs
+defaultValue="ok"
+values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '404 Not Found', value: 'notfound', },
+]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "ChatRoom un-archived successfully."
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "You are not allow to do this action"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+</Tabs>

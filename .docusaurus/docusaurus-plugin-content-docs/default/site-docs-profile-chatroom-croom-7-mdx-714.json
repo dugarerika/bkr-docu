@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom7",
+  "id": "Profile/Chatroom/croom7",
+  "isDocsHomePage": false,
+  "title": "Add Members to chatroom",
+  "description": "Add Member to existing chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom7.mdx",
+  "slug": "/Profile/Chatroom/croom7",
+  "permalink": "/docs/Profile/Chatroom/croom7",
+  "version": "current",
+  "sidebar_label": "Add Members to chatroom"
+}

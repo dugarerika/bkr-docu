@@ -1,0 +1,53 @@
+---
+id: ua7
+title: Verifiy User's document
+sidebar_label: Verifiy User's document
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Verify user's document by id.
+
+<Endpoint req="PUT">/api/admin/users/:user_id/verify-documents</Endpoint>
+
+
+##### body:
+```
+{
+	"verified": 2,
+	"documents":[
+		{
+			"id":95, "status":1
+		}
+	]
+}
+```
+
+### Parameters 
+
+## Required
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| verified | ---- | boolean (0,1) |
+| documents | ---- | array, its a array of documents 'id' (integer) and 'status' (bolean [0,1]) |
+
+
+### Response
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: 'Required', value: 'required', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="required">
+
+
+</TabItem>
+<TabItem value="optional">
+
+
+</TabItem>
+</Tabs>

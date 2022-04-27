@@ -1,0 +1,30 @@
+---
+id: chat3
+title: Read All Messages
+sidebar_label: Read All Messages
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Read all messages of given chatroom
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/read-all</Endpoint>
+
+## Response
+##### 404 Not Found
+```
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+## Response
+##### 200 OK
+```
+{
+    "status": true,
+    "message": "All messages are read successfully"
+}
+```

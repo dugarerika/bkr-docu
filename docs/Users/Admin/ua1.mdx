@@ -1,0 +1,45 @@
+---
+id: ua1
+title: Get Users
+sidebar_label: Get Users
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Admin can see list of all users
+
+<Endpoint req="POST">/api/admin/users</Endpoint>
+
+### Parameters 
+
+#### Optional
+
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| sort_dir | string | in ('asc', 'desc') |
+| search | string | ---- |
+| per_page | integer | ---- |
+
+### Response
+
+##### 202 Accepted
+```
+{
+    "status": true,
+    "total": 319,
+    "data": [
+        {
+            "id": "5f1960ea-c79c-43db-bf05-b99f7a6841b3",
+            "email": "Test@yopmail.com",
+            "fullname": "##FIRST## ##LAST##",
+            "first_name": "##FIRST##",
+            "last_name": "##LAST##",
+            "display_name": "##FIRST## ##LAST##",
+            "account_type": "private",
+            "region": null,
+            "city": null,
+            "area": null,
+            "hometown": null,
+```

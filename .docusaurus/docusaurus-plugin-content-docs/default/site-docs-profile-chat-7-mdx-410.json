@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/chat7",
+  "id": "Profile/chat7",
+  "isDocsHomePage": false,
+  "title": "Started Typing",
+  "description": "API to inform other users that given user has started typing",
+  "source": "@site/docs/Profile/chat7.mdx",
+  "slug": "/Profile/chat7",
+  "permalink": "/docs/Profile/chat7",
+  "version": "current",
+  "sidebar_label": "Started Typing"
+}

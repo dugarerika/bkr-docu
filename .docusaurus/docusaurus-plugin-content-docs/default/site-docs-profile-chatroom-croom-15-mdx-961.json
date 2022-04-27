@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom15",
+  "id": "Profile/Chatroom/croom15",
+  "isDocsHomePage": false,
+  "title": "UnArchive participant Chatroom",
+  "description": "Un-Archive given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom15.mdx",
+  "slug": "/Profile/Chatroom/croom15",
+  "permalink": "/docs/Profile/Chatroom/croom15",
+  "version": "current",
+  "sidebar_label": "UnArchive participant Chatroom"
+}

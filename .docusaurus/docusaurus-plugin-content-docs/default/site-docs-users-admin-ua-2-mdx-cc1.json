@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua2",
+  "id": "Users/Admin/ua2",
+  "isDocsHomePage": false,
+  "title": "Activate  | Lock User",
+  "description": "Admin can lock/unlock or active/deactive user",
+  "source": "@site/docs/Users/Admin/ua2.mdx",
+  "slug": "/Users/Admin/ua2",
+  "permalink": "/docs/Users/Admin/ua2",
+  "version": "current",
+  "sidebar_label": "Activate  | Lock User"
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom5",
+  "id": "Profile/Chatroom/croom5",
+  "isDocsHomePage": false,
+  "title": "Leave from chatroom",
+  "description": "Leave from given group/chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom5.mdx",
+  "slug": "/Profile/Chatroom/croom5",
+  "permalink": "/docs/Profile/Chatroom/croom5",
+  "version": "current",
+  "sidebar_label": "Leave from chatroom"
+}

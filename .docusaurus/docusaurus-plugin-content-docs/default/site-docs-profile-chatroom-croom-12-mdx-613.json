@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom12",
+  "id": "Profile/Chatroom/croom12",
+  "isDocsHomePage": false,
+  "title": "Global Hide Chatroom",
+  "description": "Hide global chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom12.mdx",
+  "slug": "/Profile/Chatroom/croom12",
+  "permalink": "/docs/Profile/Chatroom/croom12",
+  "version": "current",
+  "sidebar_label": "Global Hide Chatroom"
+}

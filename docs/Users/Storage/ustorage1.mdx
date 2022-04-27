@@ -1,0 +1,48 @@
+---
+id: ustorage1
+title: Storage information
+sidebar_label: Storage information
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Get user storage information
+
+<Endpoint req="POST">/api/users/storage-information</Endpoint>
+
+
+### Parameters
+
+#### Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| place_id | integer | ---- |
+| specialist_id | integer | ---- |
+
+
+### Response
+
+<Tabs
+  defaultValue="unauthorized"
+  values={[
+    { label: 'ok', value: 'ok', },
+    { label: '401 Unauthorized', value: 'unauthorized', },
+  ]
+}>
+<TabItem value="ok">
+
+
+</TabItem>
+<TabItem value="unauthorized">
+
+```js
+{
+    "message": "Invalid token",
+    "status": false,
+    "token": ""
+}
+```
+</TabItem>
+</Tabs>

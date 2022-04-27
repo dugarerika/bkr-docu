@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/Chatroom/croom19",
+  "id": "Profile/Chatroom/croom19",
+  "isDocsHomePage": false,
+  "title": "Remove admin role from chatroom",
+  "description": "Remove given user's admin role from given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom19.mdx",
+  "slug": "/Profile/Chatroom/croom19",
+  "permalink": "/docs/Profile/Chatroom/croom19",
+  "version": "current",
+  "sidebar_label": "Remove admin role from chatroom"
+}

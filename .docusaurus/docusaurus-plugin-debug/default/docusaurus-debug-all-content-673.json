@@ -1,0 +1,899 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/erikadugar/GitHub/bkr-docu/sidebars.js",
+          "docsDirPath": "/Users/erikadugar/GitHub/bkr-docu/docs",
+          "mainDocId": "Users/u1",
+          "sidebars": {
+            "docs": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Calendar",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Users/u1"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Users/u3"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Inventory",
+                "items": [
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "ChatRoom",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Profile/Chatroom/croom1"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Profile/Chatroom/croom8"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Profile/Chatroom/croom2"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Profile/Chatroom/croom3"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Profile/chat1"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Profile/chat2"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Staff",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Chat/chat1"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/Chat/chat1": "docs",
+            "/docs/Profile/chat1": "docs",
+            "/docs/Profile/chat2": "docs",
+            "/docs/Profile/Chatroom/croom1": "docs",
+            "/docs/Profile/Chatroom/croom2": "docs",
+            "/docs/Profile/Chatroom/croom3": "docs",
+            "/docs/Profile/Chatroom/croom8": "docs",
+            "/docs/": "docs",
+            "/docs/Users/u3": "docs"
+          },
+          "docs": [
+            {
+              "unversionedId": "base",
+              "id": "base",
+              "isDocsHomePage": false,
+              "title": "base",
+              "description": "<Tabs",
+              "source": "@site/docs/base.mdx",
+              "slug": "/base",
+              "permalink": "/docs/base",
+              "version": "current"
+            },
+            {
+              "unversionedId": "Chat/chat1",
+              "id": "Chat/chat1",
+              "isDocsHomePage": false,
+              "title": "Create Message",
+              "description": "Sent message on given chatroom",
+              "source": "@site/docs/Chat/chat1.mdx",
+              "slug": "/Chat/chat1",
+              "permalink": "/docs/Chat/chat1",
+              "version": "current",
+              "sidebar_label": "Create Message",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Read Message",
+                "permalink": "/docs/Profile/chat2"
+              }
+            },
+            {
+              "unversionedId": "Profile/chat1",
+              "id": "Profile/chat1",
+              "isDocsHomePage": false,
+              "title": "Create Message",
+              "description": "Sent message on given chatroom",
+              "source": "@site/docs/Profile/chat1.mdx",
+              "slug": "/Profile/chat1",
+              "permalink": "/docs/Profile/chat1",
+              "version": "current",
+              "sidebar_label": "Create Message",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Get All chatrooms",
+                "permalink": "/docs/Profile/Chatroom/croom3"
+              },
+              "next": {
+                "title": "Read Message",
+                "permalink": "/docs/Profile/chat2"
+              }
+            },
+            {
+              "unversionedId": "Profile/chat2",
+              "id": "Profile/chat2",
+              "isDocsHomePage": false,
+              "title": "Read Message",
+              "description": "Read given messages",
+              "source": "@site/docs/Profile/chat2.mdx",
+              "slug": "/Profile/chat2",
+              "permalink": "/docs/Profile/chat2",
+              "version": "current",
+              "sidebar_label": "Read Message",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Create Message",
+                "permalink": "/docs/Profile/chat1"
+              },
+              "next": {
+                "title": "Create Message",
+                "permalink": "/docs/Chat/chat1"
+              }
+            },
+            {
+              "unversionedId": "Profile/chat3",
+              "id": "Profile/chat3",
+              "isDocsHomePage": false,
+              "title": "Read All Messages",
+              "description": "Read all messages of given chatroom",
+              "source": "@site/docs/Profile/chat3.mdx",
+              "slug": "/Profile/chat3",
+              "permalink": "/docs/Profile/chat3",
+              "version": "current",
+              "sidebar_label": "Read All Messages"
+            },
+            {
+              "unversionedId": "Profile/chat4",
+              "id": "Profile/chat4",
+              "isDocsHomePage": false,
+              "title": "Block User",
+              "description": "Block given user",
+              "source": "@site/docs/Profile/chat4.mdx",
+              "slug": "/Profile/chat4",
+              "permalink": "/docs/Profile/chat4",
+              "version": "current",
+              "sidebar_label": "Block User"
+            },
+            {
+              "unversionedId": "Profile/chat5",
+              "id": "Profile/chat5",
+              "isDocsHomePage": false,
+              "title": "Un-Block User",
+              "description": "Un-Block given user",
+              "source": "@site/docs/Profile/chat5.mdx",
+              "slug": "/Profile/chat5",
+              "permalink": "/docs/Profile/chat5",
+              "version": "current",
+              "sidebar_label": "Un-Block User"
+            },
+            {
+              "unversionedId": "Profile/chat6",
+              "id": "Profile/chat6",
+              "isDocsHomePage": false,
+              "title": "Update presence",
+              "description": "This API will make user online status to false",
+              "source": "@site/docs/Profile/chat6.mdx",
+              "slug": "/Profile/chat6",
+              "permalink": "/docs/Profile/chat6",
+              "version": "current",
+              "sidebar_label": "Update presence"
+            },
+            {
+              "unversionedId": "Profile/chat7",
+              "id": "Profile/chat7",
+              "isDocsHomePage": false,
+              "title": "Started Typing",
+              "description": "API to inform other users that given user has started typing",
+              "source": "@site/docs/Profile/chat7.mdx",
+              "slug": "/Profile/chat7",
+              "permalink": "/docs/Profile/chat7",
+              "version": "current",
+              "sidebar_label": "Started Typing"
+            },
+            {
+              "unversionedId": "Profile/chat8",
+              "id": "Profile/chat8",
+              "isDocsHomePage": false,
+              "title": "Stop Typing",
+              "description": "API to inform other users that given user has stop typing",
+              "source": "@site/docs/Profile/chat8.mdx",
+              "slug": "/Profile/chat8",
+              "permalink": "/docs/Profile/chat8",
+              "version": "current",
+              "sidebar_label": "Stop Typing"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom1",
+              "id": "Profile/Chatroom/croom1",
+              "isDocsHomePage": false,
+              "title": "Create Chat Room",
+              "description": "Create new chatroom with atleast one participant.",
+              "source": "@site/docs/Profile/Chatroom/croom1.mdx",
+              "slug": "/Profile/Chatroom/croom1",
+              "permalink": "/docs/Profile/Chatroom/croom1",
+              "version": "current",
+              "sidebar_label": "Create Chat Room",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Check Username",
+                "permalink": "/docs/Users/u3"
+              },
+              "next": {
+                "title": "Get ChatRoom Messages",
+                "permalink": "/docs/Profile/Chatroom/croom8"
+              }
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom10",
+              "id": "Profile/Chatroom/croom10",
+              "isDocsHomePage": false,
+              "title": "Hide patricipant chatroom",
+              "description": "Hide Participant chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom10.mdx",
+              "slug": "/Profile/Chatroom/croom10",
+              "permalink": "/docs/Profile/Chatroom/croom10",
+              "version": "current",
+              "sidebar_label": "Hide patricipant chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom11",
+              "id": "Profile/Chatroom/croom11",
+              "isDocsHomePage": false,
+              "title": "UnHide Participant chatroom",
+              "description": "UnHide participant chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom11.mdx",
+              "slug": "/Profile/Chatroom/croom11",
+              "permalink": "/docs/Profile/Chatroom/croom11",
+              "version": "current",
+              "sidebar_label": "UnHide Participant chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom12",
+              "id": "Profile/Chatroom/croom12",
+              "isDocsHomePage": false,
+              "title": "Global Hide Chatroom",
+              "description": "Hide global chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom12.mdx",
+              "slug": "/Profile/Chatroom/croom12",
+              "permalink": "/docs/Profile/Chatroom/croom12",
+              "version": "current",
+              "sidebar_label": "Global Hide Chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom13",
+              "id": "Profile/Chatroom/croom13",
+              "isDocsHomePage": false,
+              "title": "Global UnHide Chatroom",
+              "description": "UnHide global chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom13.mdx",
+              "slug": "/Profile/Chatroom/croom13",
+              "permalink": "/docs/Profile/Chatroom/croom13",
+              "version": "current",
+              "sidebar_label": "Global UnHide Chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom14",
+              "id": "Profile/Chatroom/croom14",
+              "isDocsHomePage": false,
+              "title": "Archive participant ChatRoom",
+              "description": "Archive given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom14.mdx",
+              "slug": "/Profile/Chatroom/croom14",
+              "permalink": "/docs/Profile/Chatroom/croom14",
+              "version": "current",
+              "sidebar_label": "Archive participant ChatRoom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom15",
+              "id": "Profile/Chatroom/croom15",
+              "isDocsHomePage": false,
+              "title": "UnArchive participant Chatroom",
+              "description": "Un-Archive given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom15.mdx",
+              "slug": "/Profile/Chatroom/croom15",
+              "permalink": "/docs/Profile/Chatroom/croom15",
+              "version": "current",
+              "sidebar_label": "UnArchive participant Chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom16",
+              "id": "Profile/Chatroom/croom16",
+              "isDocsHomePage": false,
+              "title": "Archive MAIN ChatRoom",
+              "description": "Archive Main chat room",
+              "source": "@site/docs/Profile/Chatroom/croom16.mdx",
+              "slug": "/Profile/Chatroom/croom16",
+              "permalink": "/docs/Profile/Chatroom/croom16",
+              "version": "current",
+              "sidebar_label": "Archive MAIN ChatRoom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom17",
+              "id": "Profile/Chatroom/croom17",
+              "isDocsHomePage": false,
+              "title": "UnArchive Global Chatroom",
+              "description": "Un-Archive Main chat room",
+              "source": "@site/docs/Profile/Chatroom/croom17.mdx",
+              "slug": "/Profile/Chatroom/croom17",
+              "permalink": "/docs/Profile/Chatroom/croom17",
+              "version": "current",
+              "sidebar_label": "UnArchive Global Chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom18",
+              "id": "Profile/Chatroom/croom18",
+              "isDocsHomePage": false,
+              "title": "Make Admin",
+              "description": "Make given user admin into given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom18.mdx",
+              "slug": "/Profile/Chatroom/croom18",
+              "permalink": "/docs/Profile/Chatroom/croom18",
+              "version": "current",
+              "sidebar_label": "Make Admin"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom19",
+              "id": "Profile/Chatroom/croom19",
+              "isDocsHomePage": false,
+              "title": "Remove admin role from chatroom",
+              "description": "Remove given user's admin role from given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom19.mdx",
+              "slug": "/Profile/Chatroom/croom19",
+              "permalink": "/docs/Profile/Chatroom/croom19",
+              "version": "current",
+              "sidebar_label": "Remove admin role from chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom2",
+              "id": "Profile/Chatroom/croom2",
+              "isDocsHomePage": false,
+              "title": "Upload chatroom image",
+              "description": "Get Messages of given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom2.mdx",
+              "slug": "/Profile/Chatroom/croom2",
+              "permalink": "/docs/Profile/Chatroom/croom2",
+              "version": "current",
+              "sidebar_label": "Upload chatroom image",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Get ChatRoom Messages",
+                "permalink": "/docs/Profile/Chatroom/croom8"
+              },
+              "next": {
+                "title": "Get All chatrooms",
+                "permalink": "/docs/Profile/Chatroom/croom3"
+              }
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom20",
+              "id": "Profile/Chatroom/croom20",
+              "isDocsHomePage": false,
+              "title": "Mute Chatroom Setting",
+              "description": "Mute chatroom setting",
+              "source": "@site/docs/Profile/Chatroom/croom20.mdx",
+              "slug": "/Profile/Chatroom/croom20",
+              "permalink": "/docs/Profile/Chatroom/croom20",
+              "version": "current",
+              "sidebar_label": "Mute Chatroom Setting"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom3",
+              "id": "Profile/Chatroom/croom3",
+              "isDocsHomePage": false,
+              "title": "Get All chatrooms",
+              "description": "Upload chatroom image",
+              "source": "@site/docs/Profile/Chatroom/croom3.mdx",
+              "slug": "/Profile/Chatroom/croom3",
+              "permalink": "/docs/Profile/Chatroom/croom3",
+              "version": "current",
+              "sidebar_label": "Get All chatrooms",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Upload chatroom image",
+                "permalink": "/docs/Profile/Chatroom/croom2"
+              },
+              "next": {
+                "title": "Create Message",
+                "permalink": "/docs/Profile/chat1"
+              }
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom4",
+              "id": "Profile/Chatroom/croom4",
+              "isDocsHomePage": false,
+              "title": "Export Chatroom",
+              "description": "Export given chatroom messages",
+              "source": "@site/docs/Profile/Chatroom/croom4.mdx",
+              "slug": "/Profile/Chatroom/croom4",
+              "permalink": "/docs/Profile/Chatroom/croom4",
+              "version": "current",
+              "sidebar_label": "Export Chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom5",
+              "id": "Profile/Chatroom/croom5",
+              "isDocsHomePage": false,
+              "title": "Leave from chatroom",
+              "description": "Leave from given group/chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom5.mdx",
+              "slug": "/Profile/Chatroom/croom5",
+              "permalink": "/docs/Profile/Chatroom/croom5",
+              "version": "current",
+              "sidebar_label": "Leave from chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom6",
+              "id": "Profile/Chatroom/croom6",
+              "isDocsHomePage": false,
+              "title": "Delete member from chat room",
+              "description": "Delete member from given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom6.mdx",
+              "slug": "/Profile/Chatroom/croom6",
+              "permalink": "/docs/Profile/Chatroom/croom6",
+              "version": "current",
+              "sidebar_label": "Delete member from chat room"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom7",
+              "id": "Profile/Chatroom/croom7",
+              "isDocsHomePage": false,
+              "title": "Add Members to chatroom",
+              "description": "Add Member to existing chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom7.mdx",
+              "slug": "/Profile/Chatroom/croom7",
+              "permalink": "/docs/Profile/Chatroom/croom7",
+              "version": "current",
+              "sidebar_label": "Add Members to chatroom"
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom8",
+              "id": "Profile/Chatroom/croom8",
+              "isDocsHomePage": false,
+              "title": "Get ChatRoom Messages",
+              "description": "Get Messages of given chatroom",
+              "source": "@site/docs/Profile/Chatroom/croom8.mdx",
+              "slug": "/Profile/Chatroom/croom8",
+              "permalink": "/docs/Profile/Chatroom/croom8",
+              "version": "current",
+              "sidebar_label": "Get ChatRoom Messages",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Create Chat Room",
+                "permalink": "/docs/Profile/Chatroom/croom1"
+              },
+              "next": {
+                "title": "Upload chatroom image",
+                "permalink": "/docs/Profile/Chatroom/croom2"
+              }
+            },
+            {
+              "unversionedId": "Profile/Chatroom/croom9",
+              "id": "Profile/Chatroom/croom9",
+              "isDocsHomePage": false,
+              "title": "Check for available Agents",
+              "description": "This API will return the user id of avaiable agent with less chat queue.",
+              "source": "@site/docs/Profile/Chatroom/croom9.mdx",
+              "slug": "/Profile/Chatroom/croom9",
+              "permalink": "/docs/Profile/Chatroom/croom9",
+              "version": "current",
+              "sidebar_label": "Check for available Agents"
+            },
+            {
+              "unversionedId": "Users/Admin/Storage/uastorage1",
+              "id": "Users/Admin/Storage/uastorage1",
+              "isDocsHomePage": false,
+              "title": "Get storage information",
+              "description": "/api/admin/storage-information",
+              "source": "@site/docs/Users/Admin/Storage/uastorage1.mdx",
+              "slug": "/Users/Admin/Storage/uastorage1",
+              "permalink": "/docs/Users/Admin/Storage/uastorage1",
+              "version": "current",
+              "sidebar_label": "Get storage information"
+            },
+            {
+              "unversionedId": "Users/Admin/ua1",
+              "id": "Users/Admin/ua1",
+              "isDocsHomePage": false,
+              "title": "Get Users",
+              "description": "Admin can see list of all users",
+              "source": "@site/docs/Users/Admin/ua1.mdx",
+              "slug": "/Users/Admin/ua1",
+              "permalink": "/docs/Users/Admin/ua1",
+              "version": "current",
+              "sidebar_label": "Get Users"
+            },
+            {
+              "unversionedId": "Users/Admin/ua10",
+              "id": "Users/Admin/ua10",
+              "isDocsHomePage": false,
+              "title": "Get verified Users",
+              "description": "Get all verified users lists",
+              "source": "@site/docs/Users/Admin/ua10.mdx",
+              "slug": "/Users/Admin/ua10",
+              "permalink": "/docs/Users/Admin/ua10",
+              "version": "current",
+              "sidebar_label": "Get verified Users"
+            },
+            {
+              "unversionedId": "Users/Admin/ua11",
+              "id": "Users/Admin/ua11",
+              "isDocsHomePage": false,
+              "title": "Get verification User's Details",
+              "description": "Get verified users details",
+              "source": "@site/docs/Users/Admin/ua11.mdx",
+              "slug": "/Users/Admin/ua11",
+              "permalink": "/docs/Users/Admin/ua11",
+              "version": "current",
+              "sidebar_label": "Get verification User's Details"
+            },
+            {
+              "unversionedId": "Users/Admin/ua2",
+              "id": "Users/Admin/ua2",
+              "isDocsHomePage": false,
+              "title": "Activate  | Lock User",
+              "description": "Admin can lock/unlock or active/deactive user",
+              "source": "@site/docs/Users/Admin/ua2.mdx",
+              "slug": "/Users/Admin/ua2",
+              "permalink": "/docs/Users/Admin/ua2",
+              "version": "current",
+              "sidebar_label": "Activate  | Lock User"
+            },
+            {
+              "unversionedId": "Users/Admin/ua3",
+              "id": "Users/Admin/ua3",
+              "isDocsHomePage": false,
+              "title": "Get User Details",
+              "description": "Get user details by id",
+              "source": "@site/docs/Users/Admin/ua3.mdx",
+              "slug": "/Users/Admin/ua3",
+              "permalink": "/docs/Users/Admin/ua3",
+              "version": "current",
+              "sidebar_label": "Get User Details"
+            },
+            {
+              "unversionedId": "Users/Admin/ua4",
+              "id": "Users/Admin/ua4",
+              "isDocsHomePage": false,
+              "title": "Get Members",
+              "description": "Returns users by role, default is 'member'. Available to users with type 'admin' only.",
+              "source": "@site/docs/Users/Admin/ua4.mdx",
+              "slug": "/Users/Admin/ua4",
+              "permalink": "/docs/Users/Admin/ua4",
+              "version": "current",
+              "sidebar_label": "Get Members"
+            },
+            {
+              "unversionedId": "Users/Admin/ua5",
+              "id": "Users/Admin/ua5",
+              "isDocsHomePage": false,
+              "title": "Update User Password",
+              "description": "Update user password by id. Returns true on success. Does not affect the token.",
+              "source": "@site/docs/Users/Admin/ua5.mdx",
+              "slug": "/Users/Admin/ua5",
+              "permalink": "/docs/Users/Admin/ua5",
+              "version": "current",
+              "sidebar_label": "Update User Password"
+            },
+            {
+              "unversionedId": "Users/Admin/ua6",
+              "id": "Users/Admin/ua6",
+              "isDocsHomePage": false,
+              "title": "Delete User",
+              "description": "Delete single user by id.",
+              "source": "@site/docs/Users/Admin/ua6.mdx",
+              "slug": "/Users/Admin/ua6",
+              "permalink": "/docs/Users/Admin/ua6",
+              "version": "current",
+              "sidebar_label": "Delete User"
+            },
+            {
+              "unversionedId": "Users/Admin/ua7",
+              "id": "Users/Admin/ua7",
+              "isDocsHomePage": false,
+              "title": "Verifiy User's document",
+              "description": "Verify user's document by id.",
+              "source": "@site/docs/Users/Admin/ua7.mdx",
+              "slug": "/Users/Admin/ua7",
+              "permalink": "/docs/Users/Admin/ua7",
+              "version": "current",
+              "sidebar_label": "Verifiy User's document"
+            },
+            {
+              "unversionedId": "Users/Admin/ua8",
+              "id": "Users/Admin/ua8",
+              "isDocsHomePage": false,
+              "title": "Get verification Users",
+              "description": "Get details of verification users",
+              "source": "@site/docs/Users/Admin/ua8.mdx",
+              "slug": "/Users/Admin/ua8",
+              "permalink": "/docs/Users/Admin/ua8",
+              "version": "current",
+              "sidebar_label": "Get verification Users"
+            },
+            {
+              "unversionedId": "Users/Admin/ua9",
+              "id": "Users/Admin/ua9",
+              "isDocsHomePage": false,
+              "title": "Get verification User's Details",
+              "description": "Get details of verification users",
+              "source": "@site/docs/Users/Admin/ua9.mdx",
+              "slug": "/Users/Admin/ua9",
+              "permalink": "/docs/Users/Admin/ua9",
+              "version": "current",
+              "sidebar_label": "Get verification User's Details"
+            },
+            {
+              "unversionedId": "Users/Storage/ustorage1",
+              "id": "Users/Storage/ustorage1",
+              "isDocsHomePage": false,
+              "title": "Storage information",
+              "description": "Get user storage information",
+              "source": "@site/docs/Users/Storage/ustorage1.mdx",
+              "slug": "/Users/Storage/ustorage1",
+              "permalink": "/docs/Users/Storage/ustorage1",
+              "version": "current",
+              "sidebar_label": "Storage information"
+            },
+            {
+              "unversionedId": "Users/Storage/ustorage2",
+              "id": "Users/Storage/ustorage2",
+              "isDocsHomePage": false,
+              "title": "Get media details",
+              "description": "Get storage media details by id",
+              "source": "@site/docs/Users/Storage/ustorage2.mdx",
+              "slug": "/Users/Storage/ustorage2",
+              "permalink": "/docs/Users/Storage/ustorage2",
+              "version": "current",
+              "sidebar_label": "Get media details"
+            },
+            {
+              "unversionedId": "Users/Storage/ustorage3",
+              "id": "Users/Storage/ustorage3",
+              "isDocsHomePage": false,
+              "title": "Delete Media",
+              "description": "Delete media from storage by id",
+              "source": "@site/docs/Users/Storage/ustorage3.mdx",
+              "slug": "/Users/Storage/ustorage3",
+              "permalink": "/docs/Users/Storage/ustorage3",
+              "version": "current",
+              "sidebar_label": "Delete Media"
+            },
+            {
+              "unversionedId": "Users/u1",
+              "id": "Users/u1",
+              "isDocsHomePage": false,
+              "title": "Getting",
+              "description": "The user can login using valid credentials",
+              "source": "@site/docs/Users/u1.mdx",
+              "slug": "/",
+              "permalink": "/docs/",
+              "version": "current",
+              "sidebar_label": "Authenticate",
+              "sidebar": "docs",
+              "next": {
+                "title": "Check Username",
+                "permalink": "/docs/Users/u3"
+              }
+            },
+            {
+              "unversionedId": "Users/u3",
+              "id": "Users/u3",
+              "isDocsHomePage": false,
+              "title": "Check Username",
+              "description": "Can check the username availability",
+              "source": "@site/docs/Users/u3.mdx",
+              "slug": "/Users/u3",
+              "permalink": "/docs/Users/u3",
+              "version": "current",
+              "sidebar_label": "Check Username",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Getting",
+                "permalink": "/docs/"
+              },
+              "next": {
+                "title": "Create Chat Room",
+                "permalink": "/docs/Profile/Chatroom/croom1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-30-welcome.md",
+            "source": "@site/blog/2019-05-30-welcome.md",
+            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+            "date": "2019-05-30T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Welcome",
+            "readingTime": 0.175,
+            "truncated": false,
+            "nextItem": {
+              "title": "Hello",
+              "permalink": "/blog/hello-world"
+            }
+          }
+        },
+        {
+          "id": "hello-world",
+          "metadata": {
+            "permalink": "/blog/hello-world",
+            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-29-hello-world.md",
+            "source": "@site/blog/2019-05-29-hello-world.md",
+            "description": "Welcome to this blog. This blog is created with Docusaurus 2 alpha.",
+            "date": "2019-05-29T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Hello",
+            "readingTime": 0.12,
+            "truncated": true,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Hola",
+              "permalink": "/blog/hola"
+            }
+          }
+        },
+        {
+          "id": "hola",
+          "metadata": {
+            "permalink": "/blog/hola",
+            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2019-05-28-hola.md",
+            "source": "@site/blog/2019-05-28-hola.md",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "title": "Hola",
+            "readingTime": 0.12,
+            "truncated": false,
+            "prevItem": {
+              "title": "Hello",
+              "permalink": "/blog/hello-world"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 3,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ]
+        }
+      ],
+      "blogTags": {
+        "facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook"
+        },
+        "hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "hello-world"
+          ],
+          "permalink": "/blog/tags/hello"
+        },
+        "docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ],
+          "permalink": "/blog/tags/docusaurus"
+        },
+        "hola": {
+          "name": "hola",
+          "items": [
+            "hola"
+          ],
+          "permalink": "/blog/tags/hola"
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

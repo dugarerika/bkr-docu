@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/chat4",
+  "id": "Profile/chat4",
+  "isDocsHomePage": false,
+  "title": "Block User",
+  "description": "Block given user",
+  "source": "@site/docs/Profile/chat4.mdx",
+  "slug": "/Profile/chat4",
+  "permalink": "/docs/Profile/chat4",
+  "version": "current",
+  "sidebar_label": "Block User"
+}

@@ -1,0 +1,39 @@
+---
+id: chat5
+title: Un-Block User
+sidebar_label: Un-Block User
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+Un-Block given user
+
+<Endpoint req="POST">/api/users/:user_id/un-block</Endpoint>
+
+ 
+ ### Response
+ ##### 200 OK
+ ```
+ {
+  "status": true,
+  "message": "You have un-blocked given user successfully."
+ }
+ ```
+ 
+ ##### 422 Unprocessable Entity
+ ```
+ {
+  "status": false,
+  "message": "You have not blocked given user"
+ }
+ ```
+ 
+ ##### 404 Not Found
+ ```
+ {
+  "status": false,
+  "message": "User not found."
+ }
+ ```

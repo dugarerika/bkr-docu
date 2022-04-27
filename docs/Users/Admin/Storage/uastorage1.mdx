@@ -1,0 +1,95 @@
+---
+id: uastorage1
+title: Get storage information
+sidebar_label: Get storage information
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../../Endpoint';
+
+<Endpoint req="GET">/api/admin/storage-information</Endpoint>
+
+Get user storage informations
+
+### Parameters 
+
+##  Optional
+| Property | Type | Description |
+| ---- | ---- | ---- |
+| owner_id | integer | id of place, specialist |
+| owner_type | integer | 1: specialist, 0: place |
+
+### Response
+
+
+<Tabs
+  defaultValue="required"
+  values={[
+    { label: '401 Unauthorized', value: 'unauthorized', },
+    { label: '202 OK', value: 'ok', },
+  ]
+}>
+<TabItem value="unauthorized">
+
+```js
+{
+    "message": "Invalid token",
+    "status": false,
+    "token": ""
+}
+```
+</TabItem>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "total": 5368709120,
+    "used": 93780330,
+    "available": 5274928790,
+    "message": "Storage details relived successfully",
+    "total_files": 22,
+    "storage_subscriptions": [],
+    "data": [
+        {
+            "id": 10,
+            "old_user_id": 223,
+            "old_owner_id": 35,
+            "owner_type": 0,
+            "media_id": 136,
+            "media_location": 0,
+            "size": 41988,
+            "user_id": "5982fee2-2d2d-42aa-9355-5345c6bf92b7",
+            "owner_id": "1ef1ac94-b3b6-4874-a9ca-9b0c952eb1b4"
+        },
+        {
+            "id": 32,
+            "old_user_id": 223,
+            "old_owner_id": 35,
+            "owner_type": 0,
+            "media_id": 166,
+            "media_location": 0,
+            "size": 3177741,
+            "user_id": "5982fee2-2d2d-42aa-9355-5345c6bf92b7",
+            "owner_id": "1ef1ac94-b3b6-4874-a9ca-9b0c952eb1b4"
+        },
+        {
+            "id": 89,
+            "old_user_id": 0,
+            "old_owner_id": 0,
+            "owner_type": 0,
+            "media_id": 454,
+            "media_location": 0,
+            "size": 141911,
+            "user_id": "d44a0b13-1e45-4da0-8add-297f9abb36a1",
+            "owner_id": "99bc3f3e-5584-491a-93de-58ff74065a2f"
+        }
+    ]
+}
+```
+</TabItem>
+</Tabs>
+##### 
+
+

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Profile/chat2",
+  "id": "Profile/chat2",
+  "isDocsHomePage": false,
+  "title": "Read Message",
+  "description": "Read given messages",
+  "source": "@site/docs/Profile/chat2.mdx",
+  "slug": "/Profile/chat2",
+  "permalink": "/docs/Profile/chat2",
+  "version": "current",
+  "sidebar_label": "Read Message",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Create Message",
+    "permalink": "/docs/Profile/chat1"
+  },
+  "next": {
+    "title": "Create Message",
+    "permalink": "/docs/Chat/chat1"
+  }
+}

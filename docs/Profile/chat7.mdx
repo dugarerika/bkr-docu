@@ -1,0 +1,39 @@
+---
+id: chat7
+title: Started Typing
+sidebar_label: Started Typing
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../Endpoint';
+
+API to inform other users that given user has started typing
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/startedtyping</Endpoint>
+
+
+### Response
+<Tabs
+  defaultValue="notfound"
+  values={[
+    { label: '404 Not Found', value: 'notfound', },
+    { label: 'Optional', value: 'optional', },
+  ]
+}>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+</TabItem>
+<TabItem value="optional">
+
+```js
+
+```
+</TabItem>
+</Tabs>

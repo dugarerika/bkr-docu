@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Profile/chat8",
+  "id": "Profile/chat8",
+  "isDocsHomePage": false,
+  "title": "Stop Typing",
+  "description": "API to inform other users that given user has stop typing",
+  "source": "@site/docs/Profile/chat8.mdx",
+  "slug": "/Profile/chat8",
+  "permalink": "/docs/Profile/chat8",
+  "version": "current",
+  "sidebar_label": "Stop Typing"
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Admin/ua5",
+  "id": "Users/Admin/ua5",
+  "isDocsHomePage": false,
+  "title": "Update User Password",
+  "description": "Update user password by id. Returns true on success. Does not affect the token.",
+  "source": "@site/docs/Users/Admin/ua5.mdx",
+  "slug": "/Users/Admin/ua5",
+  "permalink": "/docs/Users/Admin/ua5",
+  "version": "current",
+  "sidebar_label": "Update User Password"
+}

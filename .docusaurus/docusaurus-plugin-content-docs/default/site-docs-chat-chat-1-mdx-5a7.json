@@ -1,0 +1,17 @@
+{
+  "unversionedId": "Chat/chat1",
+  "id": "Chat/chat1",
+  "isDocsHomePage": false,
+  "title": "Create Message",
+  "description": "Sent message on given chatroom",
+  "source": "@site/docs/Chat/chat1.mdx",
+  "slug": "/Chat/chat1",
+  "permalink": "/docs/Chat/chat1",
+  "version": "current",
+  "sidebar_label": "Create Message",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Read Message",
+    "permalink": "/docs/Profile/chat2"
+  }
+}

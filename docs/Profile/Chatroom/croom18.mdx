@@ -1,0 +1,64 @@
+---
+id: croom18
+title: Make Admin
+sidebar_label: Make Admin
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Endpoint from '../../../Endpoint';
+
+Make given user admin into given chatroom
+
+<Endpoint req="POST">/api/users/chatrooms/:chatroom_id/members/:user_id/make-admin</Endpoint>
+
+### Response
+
+<Tabs
+defaultValue="ok"
+values={[
+    { label: '200 OK', value: 'ok', },
+    { label: '422 Unprocessable Entity', value: 'unprocessable', },
+    { label: '404 Not Found', value: 'notfound', },
+]
+}>
+<TabItem value="ok">
+
+```js
+{
+    "status": true,
+    "message": "Given user is now admin."
+}
+```
+</TabItem>
+<TabItem value="unprocessable">
+
+```js
+{
+    "status": false,
+    "message": "You are not allow to do this action"
+}
+```
+```js
+{
+    "status": false,
+    "message": "Given user is not member of chatroom"
+}
+```
+</TabItem>
+<TabItem value="notfound">
+
+```js
+{
+    "status": false,
+    "message": "ChatRoom not found."
+}
+```
+```js
+{
+    "status": false,
+    "message": "User not found."
+}
+```
+</TabItem>
+</Tabs>

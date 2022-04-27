@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Profile/Chatroom/croom8",
+  "id": "Profile/Chatroom/croom8",
+  "isDocsHomePage": false,
+  "title": "Get ChatRoom Messages",
+  "description": "Get Messages of given chatroom",
+  "source": "@site/docs/Profile/Chatroom/croom8.mdx",
+  "slug": "/Profile/Chatroom/croom8",
+  "permalink": "/docs/Profile/Chatroom/croom8",
+  "version": "current",
+  "sidebar_label": "Get ChatRoom Messages",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Create Chat Room",
+    "permalink": "/docs/Profile/Chatroom/croom1"
+  },
+  "next": {
+    "title": "Upload chatroom image",
+    "permalink": "/docs/Profile/Chatroom/croom2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "unversionedId": "Users/Storage/ustorage2",
+  "id": "Users/Storage/ustorage2",
+  "isDocsHomePage": false,
+  "title": "Get media details",
+  "description": "Get storage media details by id",
+  "source": "@site/docs/Users/Storage/ustorage2.mdx",
+  "slug": "/Users/Storage/ustorage2",
+  "permalink": "/docs/Users/Storage/ustorage2",
+  "version": "current",
+  "sidebar_label": "Get media details"
+}
